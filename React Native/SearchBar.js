@@ -1,3 +1,8 @@
+/**
+ * For : React-native
+ * A search bar
+ */
+
 import React from 'react';
 import { View, Text, StyleSheet, TextInput } from 'react-native';
 
