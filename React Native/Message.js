@@ -6,21 +6,16 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-class Message extends Component {
-  constructor (props) {
-    super(props);
-  }
-  render () {
-    return (
-      <Text style={styles.error}>
-        {this.props.message}
-      </Text>
-    );
-  }
+const Message = (props) => {
+  return (
+    <Text style={styles.text}>
+      {props.children} 
+    </Text>
+  );
 };
 
 const styles = StyleSheet.create({
-  error: {
+  text: {
     margin: 8,
     marginBottom: 0,
     color: 'red',
@@ -30,3 +25,4 @@ const styles = StyleSheet.create({
 });
 
 export { Message };
+
